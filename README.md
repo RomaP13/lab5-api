@@ -19,6 +19,7 @@
 - `main.py` — Flask API + реалізація методу Ньютона
 - `requirements.txt` — залежності
 - `Dockerfile` — для запуску API у контейнері
+- `.github/workflows/ci.yml` — CI Pipeline
 
 ## Технології
 
@@ -33,6 +34,10 @@
 - Встановлює залежності
 - Перевіряє синтаксис коду
 - Збирає Docker-образ (`newton-api`)
+
+## Статус CI/CD
+
+<img src="ci_status_image.jpg" alt="CI Status">
 
 ## Як запустити
 
@@ -76,5 +81,13 @@ curl "http://127.0.0.1:5000/calculate?x=2.5"
 ## Висновки
 
 У ході ЛР №5 було створено HTTP API на базі Flask для моделі «Метод Ньютона».
-Реалізовано endpoint /calculate з передачею параметрів через URL.
+
+Реалізовано endpoint `/calculate` з передачею параметрів через URL.
+
 API успішно працює як локально, так і у Docker-контейнері.
+
+---
+
+У ході ЛР №6 було налаштовано автоматичний CI/CD pipeline за допомогою GitHub Actions.
+
+Pipeline автоматично перевіряє код та збирає Docker-образ при кожному push.
