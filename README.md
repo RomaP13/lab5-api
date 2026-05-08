@@ -20,6 +20,20 @@
 - `requirements.txt` — залежності
 - `Dockerfile` — для запуску API у контейнері
 
+## Технології
+
+- Flask API
+- Docker
+- GitHub Actions (CI/CD)
+
+## CI/CD Pipeline
+
+Репозиторій має автоматичний pipeline, який:
+
+- Встановлює залежності
+- Перевіряє синтаксис коду
+- Збирає Docker-образ (`newton-api`)
+
 ## Як запустити
 
 ### Варіант 1: Через Docker (рекомендовано)
